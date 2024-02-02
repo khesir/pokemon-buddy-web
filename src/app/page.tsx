@@ -1,10 +1,12 @@
-import Image from "next/image";
-import LeftContainer from "@/components/bigLeftContainer/LeftContainer";
+ import { pokefetch } from "@/actions/pokeApiFetch";
+import { PokemonCard } from "@/components/PokemonCard";
 
 export default function Home() {
+
   return (
-    <main className="flex justify-center items-center bg-red-50">
-      <LeftContainer></LeftContainer>
+    <main className="flex flex-col py-8 px-18 my-5">
+      <h1>Pokedex</h1>
+      <PokemonCard/>
     </main>
   );
 }
